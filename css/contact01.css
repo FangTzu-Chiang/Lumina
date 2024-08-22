@@ -1,0 +1,321 @@
+body {
+    /* height: 5000px; */
+    overflow-x: hidden;
+}
+
+::selection {
+    color: white;
+    background: #BC6537;
+}
+
+.section-hero {
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    /* 全屏顯示 */
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-hero {
+    background-color: #efede7;
+    color: #34473F;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-content {
+    background-color: #efede7;
+    padding: 185px 0;
+    color: #34473F;
+}
+
+.section-content3 {
+    background-color: #2e5141;
+    padding: 100px 0;
+    color: #e2dbd1;
+}
+
+
+
+/* 文字樣式能否修統一 */
+.hero-text {
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    text-align: center;
+    font-size: 5rem;
+}
+
+
+.footer-text {
+    text-align: center;
+}
+
+.content-text {
+    text-align: center;
+    font-size: 1.3rem;
+    padding: 10px;
+}
+
+.content-text .contacttitle {
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-size: 4rem;
+}
+
+.content-text .secondtitle {  
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 600;
+    font-style: italic;
+    font-size: 2rem;
+}
+
+
+.bg-img {
+    height: 100vh;
+    width: 100vw;
+    object-fit: cover;
+    filter: brightness(0.8);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+/* navbar */
+.navbar {
+    transition: all 0.5s;
+}
+
+/* navbar滾動效果 */
+.navbar-scolled {
+    background-color: rgba(233, 154, 7, 0.685);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+}
+
+.nav-link::after {
+    content: '';
+    height: 1.8px;
+    width: 100%;
+    background-color: #fff;
+    display: block;
+    opacity: 0;
+    transition: all 0.2s;
+    pointer-events: none;
+}
+
+
+.nav-link:hover:after {
+    opacity: 1;
+}
+
+.dropdown-menu {
+    background-color: #fff;
+    opacity: 0.6;
+}
+
+.image-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-wrapper img {
+    border-radius: 20px;
+    max-width: 100%;
+    height: auto;
+}
+
+.image-wrapper video {
+    border-radius: 20px;
+    max-width: 100%;
+    height: auto;
+}
+
+
+.content-wrapper {
+    padding: 30px;
+}
+.contact-right ul{
+    padding: 0;
+}
+.contactinfo li{
+    list-style: none;
+    text-align: left;
+    font-size: 1.2rem;
+    padding: 15px 15px 15px 0px;
+}
+
+/* form樣式 */
+.contact-container {
+    /* height: 100vh; */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 70px 30px;
+}
+.contact-container1 {
+    display: flex;
+    align-items: left;
+    /* justify-content: space-evenly; */
+}
+.contact-right {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    text-align: left;
+    gap: 20px;
+}
+
+.contact-inputs {
+    width: 400px;
+    height: 50px;
+    border: none;
+    outline: none;
+    padding-left: 25px;
+    font-weight: 500;
+    color: #666;
+    border-radius: 50px;
+}
+
+.contact-right textarea {
+    height: 140px;
+    padding-top: 15px;
+    border-radius: 20px;
+}
+
+.contact-inputs:focus {
+    border: 2px solid #D4AB87;
+}
+
+.contact-inputs::placeholder {
+    color: #a9a9a9;
+}
+
+.contact-right button {
+    display: flex;
+    align-items: center;
+    padding: 15px 30px;
+    font-size: 16px;
+    color: #fff;
+    gap: 10px;
+    border: none;
+    border-radius: 50px;
+    background-color: #2E5141;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+.contact-right button:hover{
+    background-color: #D49F68;
+}
+
+.contact-container .error-text {
+    font-size: 13px;
+    color: rgb(217, 3, 3);
+    text-align: left;
+    margin: -2px 0 5px;
+    display: none;
+}
+
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #efede7;
+}
+.footer-text ul{
+    padding: 0;
+}
+.footer-text li{
+    list-style: none;
+    text-align: left;
+    font-size: 1.2rem;
+    padding: 15px 15px;
+
+}
+
+.footerTitle h1{
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-size: 4rem;
+}
+
+
+.footersecondTitle h1{
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    text-align: left;
+    font-weight: 400;
+    font-size: 4rem;
+    padding-left: 15px;
+}
+
+.contact-container1 .contact-right button {
+    display: flex;
+    align-items: center;
+    padding: 12px 24px;
+    font-size: 16px;
+    color: #fff;
+    gap: 10px;
+    border: none;
+    border-radius: 50px;
+    background-color: #6A7E6D;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+.contact-right button:hover{
+    background-color: #D49F68;
+}
+
+.toTop {
+    background-color: rgba(228, 228, 228, 0.249);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    bottom: 16px;
+    right: 32px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    color: white;
+    text-decoration: none;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.4s;
+    z-index: 10;
+}
+
+.toTop:hover {
+    color: #D49F68;
+    bottom: 32px;
+    pointer-events: auto;
+    opacity: 1;
+}
+
+.toTop.active {
+    bottom: 32px;
+    pointer-events: auto;
+    opacity: 1;
+}
+
+
+@media (min-width: 576px) {
+
+    /* 下拉選單斷點 */
+    .dropdown:hover>.dropdown-menu {
+        display: block;
+        margin-top: 0;
+    }
+
+}
